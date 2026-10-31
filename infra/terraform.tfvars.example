@@ -1,0 +1,12 @@
+# Copy to terraform.tfvars (git-ignored) and adjust.
+project_name             = "secure-file-vault"
+environment              = "dev"
+aws_region               = "ap-south-1"
+max_file_size_bytes      = 104857600
+allowed_content_types    = "image/*,application/pdf,text/plain"
+upload_url_ttl_seconds   = 300
+download_url_ttl_seconds = 60
+cors_allowed_origins     = ["http://localhost:3000"]
+alarm_email              = ""
+log_retention_days       = 30
+force_destroy            = true # dev only
